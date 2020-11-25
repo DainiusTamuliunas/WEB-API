@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for data in duomenys %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2">{{ data.Country }}</a>
+              <small class="text-muted">Population: {{ data.Population }} m.</small>
+            </div>
+            <h2><a class="article-title" > {{ data.GDP_prediction }}</a></h2>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
